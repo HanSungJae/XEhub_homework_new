@@ -6,6 +6,7 @@ spring:
     view:
       prefix: /views/
       suffix: .jsp
+    static-path-pattern: /static/**
   devtools:
     livereload:
       enabled: false

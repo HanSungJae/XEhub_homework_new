@@ -102,6 +102,7 @@ body{
     margin: 140px;
     flex-wrap: wrap;
     flex-direction: column;
+
   }
   .container2{
     display: flex;

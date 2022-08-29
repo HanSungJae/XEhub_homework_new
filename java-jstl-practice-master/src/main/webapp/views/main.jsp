@@ -3,82 +3,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>메인페이지</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <link rel="stylesheet" href="/static/BEM_style.css" type="text/css">
+
 </head>
 <body>
-<div class="topMenuBar">
-    <nav>
-        <span class="topMenuText">로고</span>
-        <span class="topMenuText">제품</span>
-        <span class="topMenuText">솔루션</span>
-        <span class="topMenuText">요금</span>
-        <span class="topMenuText">개발자</span>
-    </nav>
+<div class ="header">
+    <div class ="header__left__nav">
+        <span class="header__textbox">로고</span>
+        <span class="header__textbox">제품</span>
+        <span class="header__textbox">솔루션</span>
+        <span class="header__textbox">요금</span>
+        <span class="header__textbox">개발자</span>
+    </div>
 
-    <div class="topMenuBarRight">
-        <span class="topMenuText" style="margin-right: 30px" id="login">로그인</span>
-        <a href="/" class="topMenuButton">
+    <div class="header__right__nav">
+        <div class="header__login">
+            <span class="header__textbox" id="login">로그인</span>
+        </div>
+        <a href="/" class="header__accessButton">
             <span>무료 평가판</span>
             <span>→</span>
         </a>
     </div>
-
 </div>
 
+<div class="content">
+    <div class="content__topcontainer">
+        <div class="content__topcontainer__left">
+            <div class="box">
+                <div class="box__top">
+                    <div class="content__topcontainer__titlemenu"><a href="/">홈</a></div>
+                    <div class="content__topcontainer__titlemenu"><a href="/">HelloSign이란?</a></div>
+                    <div class="content__topcontainer__titlemenu"><a href="/">전자 서명</a></div>
+                    <p class="content__topcontainer__title">전자 서명이란 무엇인가요?</p>
+                    <div class="content__topcontainer__subtitle">전자 서명이 간편해지는 HelloSign</div>
+                </div>
+                <div class="box__bottom">
+                    <div class="startButton">
+                        <button class="accessButton">
+                            <a href="/">지금바로 전자서명 시작하기</a>
+                            <div>→</div>
+                        </button>
+                        <div class="canceltext">체험 중 언제든 취소 가능</div>
+                    </div>
+                </div>
+            </div>
 
-<div class="containerTop">
-    <div class="headitem" style="background-color: black">
-
-        <div>
-            <div class="headtext" style="color: white; float: left; margin-left: 15px"><a href="/">홈</a></div>
-            <div class="headtext" style="color: white; float: left"><a href="/">HelloSign이란?</a></div>
-            <div class="headtext" style="color: white">전자 서명</div>
-            <p style="margin: 15px; color: white; font-size: 46px">전자 서명이란 무엇인가요?</p>
-            <div class="text" style="color: white; font-size: 20px">전자 서명이 간편해지는 HelloSign</div>
         </div>
-        <div>
-            <button style="margin-left: 14px">
-                <a href="/">지금바로 전자서명 시작하기</a>
-                <div>→</div>
-            </button>
-            <div class="canceltext">체험 중 언제든 취소 가능</div>
+
+        <div class="content__topcontainer__right">
+            <div class="box">
+                <div class="box__img">
+                    <img src="/static/images/topImg.png" style="width: 475px; margin-left: 120px" alt="top">
+                </div>
+            </div>
         </div>
-
     </div>
-    <div class="headitem" style="background-color: #fad24b">
-        <img src="../images/topImg.png" style="width: 475px; margin-left: 120px">
+    <div class="content__textbox">
+        <div class="title">전자 서명이 지닌 강력한 힘</div>
+        <div class="text">전자 서명은 특정 문서의 내용에 동의함을 표시하는 전자적 표현을 말합니다. NDA에서부터 판매 계약서,
+            청구서, 출퇴근 기록부, 임대차 계약서, 세금 양식까지 생각할 수 있는 모든 유형의 문서에 전자 서명이 가능하죠.
+            전자 서명은 미국 전자서명법 ESIGN(2000)에 따라 종이에 한 서명과 똑같은 것으로 그 합법성을 인정받고 있습니다.</div>
     </div>
-</div>
 
-<div class="onlytext">
-    <div class="title">전자 서명이 지닌 강력한 힘</div>
-    <div class="text">전자 서명은 특정 문서의 내용에 동의함을 표시하는 전자적 표현을 말합니다. NDA에서부터 판매 계약서,
-        청구서, 출퇴근 기록부, 임대차 계약서, 세금 양식까지 생각할 수 있는 모든 유형의 문서에 전자 서명이 가능하죠.
-        전자 서명은 미국 전자서명법 ESIGN(2000)에 따라 종이에 한 서명과 똑같은 것으로 그 합법성을 인정받고 있습니다.</div>
-</div>
+    <div class="content__textbox">
+        <div class="title">유연한 서명과정</div>
+        <div class="text">전자 서명 프로세스를 시작하는 가장 첫 단꼐는 바로 전자 서명을 만드는 것입니다. 전자 서명을 만드는
+            간편하면서도 다양한 방법을 소개합니다. 어떤 방법으로 제작하더라도 나만의 고유한 전자 서명이 HelloSign 계정에 저장되어
+            추후 사용할 수 있죠.<br><br>전자 서명을 만드는 다양한 옵션은 다음과 같습니다.</div>
+    </div>
 
-<div class="onlytext">
-    <div class="title">유연한 서명과정</div>
-    <div class="text">전자 서명 프로세스를 시작하는 가장 첫 단꼐는 바로 전자 서명을 만드는 것입니다. 전자 서명을 만드는
-        간편하면서도 다양한 방법을 소개합니다. 어떤 방법으로 제작하더라도 나만의 고유한 전자 서명이 HelloSign 계정에 저장되어
-        추후 사용할 수 있죠.<br><br>전자 서명을 만드는 다양한 옵션은 다음과 같습니다.</div>
-</div>
-
-<div class="container">
-    <div class="item">
+    <div class="content__textcontainer--imgRight">
+    <div class="content__textcontainer__text">
         <div class="title">손가락이나 스타일러스펜으로 서명 그리기</div>
         <div class="text">터치스크린 기능이 지원될 경우 손가락을 사용해 문서에서 바로 전자 서명을 만들 수 있습니다.
             이 방법은 모바일 장치나 태블릿을 사용할 때 특히 유용합니다.</div>
     </div>
-    <div class="imgitem">
-        <img src="../images/img1.png" style="height: 700px">
+    <div class="content__textcontainer__img">
+        <img src="/static/images/img1.png" style="height: 700px">
     </div>
+    </div>
+    <div class="content__textcontainer--imgLeft">
+        <div class="content__textcontainer__img">
+            <img src="/static/images/img2.png" style="height: 700px">
+        </div>
+
+    </div>
+
+
 </div>
 
 <div class="container2">
     <div class="imgitem">
-        <img src="../images/img2.png" style="height: 700px">
+        <img src="/static/images/img2.png" style="height: 700px">
     </div>
     <div class="item">
         <div class="title">서명 이미지 업로드</div>
@@ -92,12 +110,12 @@
         <div class="text">마우스 커서나 터치패드를 사용해서 선을 따라 커서를 드래그하여 나만의 고유한 전자 서명을 만들 수 있습니다.</div>
     </div>
     <div class="imgitem">
-        <img src="../images/img3.png" style="height: 700px">
+        <img src="/static/images/img3.png" style="height: 700px">
     </div>
 </div>
 <div class="container2">
     <div class="imgitem">
-        <img src="../images/img4.png" style="height: 700px">
+        <img src="/static/images/img4.png" style="height: 700px">
     </div>
     <div class="item">
         <div class="title">키보드로 서명 입력</div>
@@ -129,12 +147,12 @@
         </div>
     </div>
     <div class="imgitem">
-        <img src="../images/img5.png" style="height: 700px">
+        <img src="/static/images/img5.png" style="height: 700px">
     </div>
 </div>
 <div class="container2">
     <div class="imgitem">
-        <img src="../images/img6.png" style="height: 700px">
+        <img src="/static/images/img6.png" style="height: 700px">
     </div>
     <div class="item">
         <div class="title">빠르고 간편하게 전자 서명 시작하기</div>
