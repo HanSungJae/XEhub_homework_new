@@ -1,0 +1,67 @@
+@charset "UTF-8";
+body{
+  background-color: #f7f5f2;
+  padding-top: 66px;
+}
+
+.header{
+  padding: 1rem;
+  color: #1e1919;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__left__nav {
+
+}
+
+.header__right__nav {
+
+}
+
+.accessButton{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+  border: none;
+
+  background-color: #0061fe;
+  color: white;
+
+  left: 24px;
+  height: 72px;
+  padding: 24px;
+}
+
+.container{
+
+}
+
+.content{
+
+}
+
+.content__topcontainer{
+
+}
+
+.content__textcontainer{
+
+}
+
+content__textbox{
+
+}
+
+
